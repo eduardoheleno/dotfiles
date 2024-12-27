@@ -53,3 +53,5 @@
 (package! powerline)
 (package! spaceline)
 (package! evil-anzu)
+(package! dockerfile-mode)
+(package! docker-compose-mode)

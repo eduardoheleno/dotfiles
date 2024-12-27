@@ -21,6 +21,9 @@ gaps inner 5
 # Remove title bar
 default_border pixel 2
 
+# Init picom
+exec_always --no-startup-id picom
+
 # Set monitors position
 exec_always xrandr --output HDMI-0 --right-of DP-0
 
@@ -29,7 +32,7 @@ exec_always xrandr --output DP-0 --mode 1920x1080 --rate 144
 exec_always xrandr --output HDMI-0 --mode 1920x1080 --rate 75
 
 # Set background image
-exec_always feh --bg-scale ~/wallpapers/wallhaven-jxqyrq.jpg
+exec_always feh --bg-scale ~/wallpapers/paint.jpg
 
 # Set colors
 client.focused #35c4ca #35c4ca #ffffff #35c4ca #35c4ca
@@ -228,7 +231,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     font pango:DejaVu Sans Mono, FontAwesome 10
-    position bottom
+    position top
     status_command i3status-rs ~/.config/i3status-rs/config.toml
     colors {
         separator #666666

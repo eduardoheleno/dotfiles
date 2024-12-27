@@ -2,3 +2,9 @@
 normal = { family = "FantasqueSansM Nerd Font Mono", style = "Regular" }
 
 size = 16
+
+[colors.primary]
+background = "#151414"
+
+[window]
+opacity = 0.8

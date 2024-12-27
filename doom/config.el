@@ -34,7 +34,7 @@
 ;; (setq doom-theme 'minimal)
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq doom-theme 'no-clown-fiesta)
+(setq doom-theme 'doom-gruvbox)
 
 (setq display-line-numbers-type 'relative)
 
@@ -57,6 +57,8 @@
 (c-set-offset 'comment-intro 0)
 
 (setenv "PATH" (concat "/home/eduardo/.local/bin:" (getenv "PATH")))
+(setenv "PATH" (concat "/usr/local/go/bin:" (getenv "PATH")))
+
 (add-to-list 'exec-path "/home/eduardo/.local/bin")
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
@@ -90,6 +92,9 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+(setq explicit-shell-file-name "/usr/bin/fish")  ; Replace with the correct path to fish if it's different
+(setq shell-file-name "fish")  ; Optional: to ensure it's used by shell commands
 
 (setq +latex-viewers '(pdf-tools))
 
@@ -133,3 +138,5 @@
   (setq-default mode-line-format '("%e" (:eval (spaceline-ml-my-custom-line)))))
 
 (my-custom-spaceline)
+
+(doom/set-frame-opacity 90)
