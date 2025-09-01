@@ -137,6 +137,15 @@
   ;; Set the custom line as the default mode-line
   (setq-default mode-line-format '("%e" (:eval (spaceline-ml-my-custom-line)))))
 
+(defun open-org-home ()
+  "Open org home file."
+  (interactive)
+  (find-file "~/Dropbox/org-sync/home.org"))
+
+(map! :leader
+      :desc "Open org home file"
+      "o o" #'open-org-home)
+
 (my-custom-spaceline)
 
 (doom/set-frame-opacity 90)
