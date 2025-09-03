@@ -4,23 +4,35 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("48042425e84cd92184837e01d0b4fe9f912d875c43021c3bcb7eeb51f1be5710" "94721c69307a2ccdc27891f044fe0836bcd71f20af679d7c0e41187f1c79acd0" "04aa1c3ccaee1cc2b93b246c6fbcd597f7e6832a97aaeac7e5891e6863236f9f" "6fc9e40b4375d9d8d0d9521505849ab4d04220ed470db0b78b700230da0a86c1" "2ba87a638b814f2b2fcc26dcf6a894b54d74b8087a575501e39fa69ce867b962" "0b3054ccc6a81d6dd37a693f37ae0d922865378cb9d226a39bae40b838d5bc62" "6b985c2f11577291645bf52be29515c5a5dc1ebe90794476fa1f7c551f1fb5bd" "c9b6d9af5d89ff0f4b735cd1c8a24422272dc42998ea522d064e568693f8951c" "393e0138d7296f33c0a52f3019b092311615db5ba01c4023d4913d7954f894e3" "bdfbfd87b603115d5e3474bb539ed1efaca8a1c1267001a4730df79268bd1000" "24fc210d47239a4c20c72a94a85b2f8e41ecb0ffaafb7adfb6fcd32b98adf848" "7768b5d8b2f50d65be11295d242b63d210c639c24bdc5fce07c247f601d983db" "66bf98be7266bbc9f3d85389e8ce355d4fefdd10c0bd5cab926dfb7e915d0d79" "cc0dbb53a10215b696d391a90de635ba1699072745bf653b53774706999208e3" "851764bc8c42c82791714a4a664bf7920bb9fb6760f6c07c2c99e25ee025d6f6" "c8b3d9364302b16318e0f231981e94cbe4806cb5cde5732c3e5c3e05e1472434" "38c0c668d8ac3841cb9608522ca116067177c92feeabc6f002a27249976d7434" "1fd6e24da8c9105cfc09820353a419fa01717ba1d12ff4e3e0fb57f5933a77fa" "d8b8c09a745470f6c088dce5df19ade98894f4ced69ce32d53aded94d512826d" "4780d7ce6e5491e2c1190082f7fe0f812707fc77455616ab6f8b38e796cbffa9" "3d9512412d5874972f9142a6c230258e33ff1168d1d21aa68d7a568f328a400b" "d23adb4d0d0acf5cf4dcdad91e4e70b6c15481bcff4170f28ed2dae90b253d00" "71728ca14d7e788011a6b5f25abd89fd643b2c5eac252f29892a2e5ca2a046f0" "7a341ca97ff62493e784fcb1634fef52b918bca9afcca30f760278a11bd87d8f" "75eef60308d7328ed14fa27002e85de255c2342e73275173a14ed3aa1643d545" "004f174754c688f358fa2afc4f8699b5db647fbfaa0d6b55ff39f63e05bfbbf5" "7fac152a13c430ee81f0fed959305e3331a6355765b3ae825006933b9ec36861" "b083003136be1357fbccee1ebcfb5e67a3dbb5e9885ba899ec02f90f934b41fb" "b0391e3cd4097e7a7a235bec7ce3a1c4e7c79339b92fe65cecca20fcf494bd0f" "075ebf0443b362beac7da83995a6af1cf30c1591502d22b32903e7cb4a854831" "3cc2385c39257fed66238921602d8104d8fd6266ad88a006d0a4325336f5ee02" "b3775ba758e7d31f3bb849e7c9e48ff60929a792961a2d536edec8f68c671ca5" "9b59e147dbbde5e638ea1cde5ec0a358d5f269d27bd2b893a0947c4a867e14c1" "e8ceeba381ba723b59a9abc4961f41583112fc7dc0e886d9fc36fa1dc37b4079" "788121c96b7a9b99a6f35e53b7c154991f4880bb0046a80330bb904c1a85e275" "e266d44fa3b75406394b979a3addc9b7f202348099cfde69e74ee6432f781336" "06ed754b259cb54c30c658502f843937ff19f8b53597ac28577ec33bb084fa52" "9cd57dd6d61cdf4f6aef3102c4cc2cfc04f5884d4f40b2c90a866c9b6267f2b3" "0170347031e5dfa93813765bc4ef9269a5e357c0be01febfa3ae5e5fcb351f09" "b95f61aa5f8a54d494a219fcde9049e23e3396459a224631e1719effcb981dbd" "c95813797eb70f520f9245b349ff087600e2bd211a681c7a5602d039c91a6428" "249e100de137f516d56bcf2e98c1e3f9e1e8a6dce50726c974fa6838fbfcec6b" "74e2ed63173b47d6dc9a82a9a8a6a9048d89760df18bc7033c5f91ff4d083e37" "262589c790e262af5fa62d59838f40d0e23bc6455e267aca1816eda86c936c8c" "2ad8cb4f6f8509341afb79f6f39636816e8cbf2d42681ff54cae6836b51d7cee" "a22b002b3b0946b8ab8e156b74929ec88252b385c868e1be934631f56535ae1d" "6f1f6a1a3cff62cc860ad6e787151b9b8599f4471d40ed746ea2819fcd184e1a" "4ade6b630ba8cbab10703b27fd05bb43aaf8a3e5ba8c2dc1ea4a2de5f8d45882" "4e2e42e9306813763e2e62f115da71b485458a36e8b4c24e17a2168c45c9cf9d" "dccf4a8f1aaf5f24d2ab63af1aa75fd9d535c83377f8e26380162e888be0c6a9" "014cb63097fc7dbda3edf53eb09802237961cbb4c9e9abd705f23b86511b0a69" "497bd8d954332f2c1ebb425fe6fe376ca2257c11f7f8a4896c8ea2e1b1bccb50" "62af502935e86eda9999fec784912dd0592673b6fbe109a8b77bd7a56cfa21f6" "91692ced59034a31ab8a4b83063e6e0e7605c4d76053ab3208e382ab3b5e680a" "f107996eca5d8b388dc746d1121de58ce94539ac091a46981e8cc0dec4244fcc" "f5f80dd6588e59cfc3ce2f11568ff8296717a938edd448a947f9823a4e282b66" "81f53ee9ddd3f8559f94c127c9327d578e264c574cda7c6d9daddaec226f87bb" "09b833239444ac3230f591e35e3c28a4d78f1556b107bafe0eb32b5977204d93" "9f297216c88ca3f47e5f10f8bd884ab24ac5bc9d884f0f23589b0a46a608fe14" "88f7ee5594021c60a4a6a1c275614103de8c1435d6d08cc58882f920e0cec65e" "ffafb0e9f63935183713b204c11d22225008559fa62133a69848835f4f4a758c" "10e5d4cc0f67ed5cafac0f4252093d2119ee8b8cb449e7053273453c1a1eb7cc" "b256b1c3b1faceb78a77d61a9f1204f8dd496e3e2234dc831082d0e7c8bce60b" "01a9797244146bbae39b18ef37e6f2ca5bebded90d9fe3a2f342a9e863aaa4fd" "ba62a580b3b99d0a4e7001d538fef271aa04b4b0badef4fa3348913fc5a01e3b" "636177b19bdd16eb442ec5562b91c9e353e837a0d13d960824aca8bb452e910c" "034dc404261727cfdacaab9f1a9135be635c782e6f94a0ed8561db16b5fe9aff" "53be6138b58f0b7274d6643d883bd3e28c9773ac5ab92a83d79ffba2a1c825fc" "d2d55329e2fc8f3794de2bdc43dee0c3e3ec2c21de50489005bd952d95268238" "f02a9ec23f4f2f0963f6ef875c469354d150cc4e098e2587f583444242257565" "77ebbc2ba194b3c214f4c364948cb4ceadafccb68dc71e03f8a4bdde325c21cd" "c5a1d8f69dbc97c0158885b3c9e178a1bc75189745207c382c2d19dcf1dc91dd" "b5fd9c7429d52190235f2383e47d340d7ff769f141cd8f9e7a4629a81abc6b19" "d14caf3318822360a48c0c8f4f451fd30165802e238876569dee335d91877d92" "87cf18e8504f18c1577254d23a6924244fd167f810b17b8769efdfdd6a40491a" "623e9fe0532cc3a0bb31929b991a16f72fad7ad9148ba2dc81e395cd70afc744" "b58b5aa5664a927866daa481ae5f0795423ed3982ce5f64e56c4106261dbd13e" "7746e1f01dae4a96c068d3c0c0357fe14ed02385de04227e4af78fb4ad784e58" "f700bc979515153bef7a52ca46a62c0aa519950cc06d539df4f3d38828944a2c" default))
+   '("48042425e84cd92184837e01d0b4fe9f912d875c43021c3bcb7eeb51f1be5710"
+     "e9a1226ffed627ec58294d77c62aa9561ec5f42309a1f7a2423c6227e34e3581"
+     "350fef8767e45b0f81dd54c986ee6854857f27067bac88d2b1c2a6fa7fecb522" default))
  '(package-selected-packages
-   '(mindre-theme base16-theme minimal-theme soothe-theme smart-mode-line-atom-one-dark-theme atom-one-dark-theme ancient-one-dark-theme nyx-theme northcode-theme bubbleberry-theme ample-zen-theme sublime-themes kaolin-themes darktooth-theme zenburn-theme)))
+   '(aio ample-zen-theme ancient-one-dark-theme atom-one-dark-theme base16-theme
+     bubbleberry-theme catppuccin-theme darktooth-theme gruber-darker-theme
+     gruvbox-theme kaolin-themes lsp-mode mindre-theme minimal-theme
+     northcode-theme nyx-theme request s smart-mode-line-atom-one-dark-theme
+     soothe-theme sublime-themes tablist transient yaml-mode zenburn-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(doom-modeline-flycheck-error ((t (:foreground "#000000" :weight bold))))
- '(doom-modeline-flycheck-info ((t (:foreground "#F1FA8C" :weight bold))))
- '(doom-modeline-flycheck-warning ((t (:foreground "#000000" :weight bold))))
- '(mode-line ((t (:foreground "#E1E1E1" :box (:line-width (4 . 4) :color "#141415")))))
- '(powerline-active0 ((t (:inherit mode-line :background "gray20"))))
- '(powerline-active1 ((t (:inherit mode-line :background "gray20" :foreground "white" :box (:line-width (2 . 2) :color "gray20" :style flat-button)))))
- '(powerline-active2 ((t (:inherit mode-line :background "#282828" :foreground "white" :box nil))))
- '(powerline-inactive1 ((t (:inherit mode-line-inactive))))
- '(powerline-inactive2 ((t (:inherit mode-line-inactive)))))
+ '(+org-todo-active ((t (:inherit (font-lock-constant-face org-todo)))))
+ '(bold ((t (:foreground "orange" :weight bold))))
+ '(corfu-current ((t (:background "black" :foreground "#eaf2f1"))))
+ '(italic ((t (:slant italic))))
+ '(org-agenda-done ((t (:inherit org-done :strike-through t))))
+ '(org-done ((t (:inherit org-headline-done :foreground "#8ec07c" :strike-through nil :weight bold))))
+ '(org-headline-done ((t (:foreground "#8ec07c" :strike-through t))))
+ '(org-link ((t (:inherit link :underline t))))
+ '(org-todo ((t (:inherit font-lock-keyword-face :weight bold))))
+ '(powerline-active0 ((t (:inherit mode-line :background "#7c6f64" :foreground "#fdf4c1"))))
+ '(powerline-active1 ((t nil)))
+ '(powerline-active2 ((t (:inherit mode-line :background "#504945" :foreground "#fdf4c1"))))
+ '(powerline-inactive0 ((t (:inherit mode-line-inactive :background "#504945" :foreground "#a89984"))))
+ '(powerline-inactive1 ((t (:inherit mode-line-inactive :background "#3c3836" :foreground "#a89984"))))
+ '(powerline-inactive2 ((t (:inherit mode-line-inactive :background "#282828" :foreground "#a89984")))))
 (put 'customize-group 'disabled nil)
 (put 'customize-themes 'disabled nil)
 (put 'customize-face 'disabled nil)

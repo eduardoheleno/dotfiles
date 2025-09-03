@@ -34,16 +34,26 @@
 ;; (setq doom-theme 'minimal)
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq doom-theme 'doom-gruvbox)
+(load-theme 'gruber-darker t)
+;; (load-theme 'gruvbox-dark-hard t)
+;; (setq doom-theme 'tango-2)
+;; (setq doom-theme 'catppuccin)
+;; (setq catppuccin-flavor 'mocha)
 
 (setq display-line-numbers-type 'relative)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
+(setq org-directory "~/Dropbox/org-sync/")
 
-(setq doom-font (font-spec :family "FantasqueSansM Nerd Font Mono" :size 20)
-      doom-variable-pitch-font (font-spec :family "FantasqueSansM Nerd Font Mono" :size 20))
+;; (setq doom-font (font-spec :family "UbuntuMonoNerdFontMono" :size 20))
+;; (setq doom-font (font-spec :family "BlexMono Nerd Font" :size 20))
+;; (setq doom-font (font-spec :family "DejaVuSansMNerdFont Mono" :size 20))
+;; (setq doom-font (font-spec :family "IosevkaNerdFont mono" :size 20))
+(setq doom-font (font-spec :family "FantasqueSansMNerdFont Mono" :size 20)
+      doom-variable-pitch-font (font-spec :family "FantasqueSansMNerdFont Mono" :size 20))
+;; (setq doom-font (font-spec :family "Iosevka Nerd Font" :size 20)
+;;       doom-variable-pitch-font (font-spec :family "FantasqueSansM Nerd Font Mono" :size 20))
 
 ;; In ~/.doom.d/init.el
 (setq doom-tabs-enable nil)  ;; Disable tabs if you want to use spaces
@@ -96,8 +106,6 @@
 (setq explicit-shell-file-name "/usr/bin/fish")  ; Replace with the correct path to fish if it's different
 (setq shell-file-name "fish")  ; Optional: to ensure it's used by shell commands
 
-(setq +latex-viewers '(pdf-tools))
-
 (windmove-default-keybindings)
 (setq doom-modeline-modal nil) ;; Disable Evil mode status display
 
@@ -137,6 +145,13 @@
   ;; Set the custom line as the default mode-line
   (setq-default mode-line-format '("%e" (:eval (spaceline-ml-my-custom-line)))))
 
+(after! org
+  (add-hook 'org-mode-hook #'iscroll-mode))
+
+(after! org
+  (evil-define-key 'normal org-mode-map (kbd "j") #'iscroll-next-line)
+  (evil-define-key 'normal org-mode-map (kbd "k") #'iscroll-previous-line))
+
 (defun open-org-home ()
   "Open org home file."
   (interactive)
@@ -146,6 +161,29 @@
       :desc "Open org home file"
       "o o" #'open-org-home)
 
+(defun my/org-wrap-bold-italic (beg end)
+  "Wrap selected text in /* */ for bold+italic in Org mode."
+  (interactive "r")
+  (when (derived-mode-p 'org-mode)
+    (save-excursion
+      (goto-char end)
+      (insert "*")
+      (goto-char beg)
+      (insert "*"))))
+
+(map! :map org-mode-map
+      :v "C-c b" #'my/org-wrap-bold-italic)
+
 (my-custom-spaceline)
 
-(doom/set-frame-opacity 90)
+(setq org-roam-directory (file-truename "~/Dropbox/org-sync"))
+(org-roam-db-autosync-mode)
+
+(setq mouse-wheel-scroll-amount '(2))
+(setq mouse-wheel-progressive-speed nil)
+
+(setq org-display-inline-images t) (setq org-redisplay-inline-images t) (setq org-startup-with-inline-images "inlineimages")
+(global-evil-mc-mode 1)
+
+(blink-cursor-mode 1)
+(add-hook 'org-mode-hook 'org-bullets-mode)
